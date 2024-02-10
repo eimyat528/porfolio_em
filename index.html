@@ -1,0 +1,404 @@
+<!doctype html>
+
+<div class="loader-container" style="z-index: 2000">
+    <div class="loader">Loading...</div>
+</div>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marketing</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+    <style>
+        .loader-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 2000;
+
+        }
+        .loader {
+            color: #1A129F;
+            font-size: 20px;
+            margin: 100px auto;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            position: relative;
+            text-indent: -9999em;
+            -webkit-animation: load4 1.3s infinite linear;
+            animation: load4 1.3s infinite linear;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+        }
+        @-webkit-keyframes load4 {
+            0%,
+            100% {
+                box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+            }
+            12.5% {
+                box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+            }
+            25% {
+                box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+            }
+            37.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+            50% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+            62.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+            }
+            75% {
+                box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+            }
+            87.5% {
+                box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+            }
+        }
+        @keyframes load4 {
+            0%,
+            100% {
+                box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+            }
+            12.5% {
+                box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+            }
+            25% {
+                box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+            }
+            37.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+            50% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+            62.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+            }
+            75% {
+                box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+            }
+            87.5% {
+                box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+            }
+        }
+
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+    <link rel="stylesheet" href="vendor/animate_it/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+
+<header class="container-fluid site-nav animated slideInDown">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 px-0">
+                    <nav class="navbar align-items-center d-flex navbar-expand-lg navbar-dark">
+                        <a class="navbar-brand" href="#">
+                            Portfolio.
+                        </a>
+                        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-bars fa-2x menu-icon"></i>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase" href="#home">Home</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase" href="#about">About</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase" href="#services">Project</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase" href="#contact">Contact Me</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="home" class="home container-fluid">
+    <div class="row">
+        <div class="container">
+            <div class="row min-vh-100 align-items-center flex-column-reverse flex-md-row">
+                <div class="col-12 col-md-6">
+                    <div class="my-3 animated slideInLeft ani-delay-1" >
+                        <h4 class="text-uppercase">I'm</h4>
+                        <h1 class="text-uppercase font-weight-bolder text-primary">Web Developer</h1>
+                        <p class=" ">
+                          Hi!My name is Ei Myat.
+                        </p>
+
+                        <a href="#" class="btn btn-primary text-uppercase">Hire Me</a>
+                        
+                        <a href="img/EEMCV.pdf" class="btn btn-sec text-uppercase" download="filename">Download CV</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 ">
+                        <div class="my-3 mr-5 mr-md-0 animated slideInRight ani-delay-2 r-image" >
+                            <img src="img/content-0.svg" class="w-75" alt="">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="social-v animated slideInLeft ani-delay-3">
+        <a href="">
+            <i class="fa fa-facebook"></i>
+        </a>
+
+        <a href="">
+            <i class="fa fa-google"></i>
+        </a>
+        <a href="">
+            <i class="fa fa-instagram"></i>
+        </a>
+        <a href="">
+            <i class="fa fa-twitter"></i>
+        </a>
+
+    </div>
+    <a class="scroll-to-next shadow animated fadeIn ani-delay-3"  href="#about">
+        <img src="img/frame-1.svg" class="animated bounce"  style="width: 30px;animation-iteration-count: infinite" alt="">
+    </a>
+</section>
+<section id="about" class="container-fluid about py-5 py-md-0">
+    <div class="row min-vh-100 align-items-center py-5 py-md-0">
+        <div class="col-12 col-md-6 py-3 py-md-5 ">
+            <div class="text-right mr-5 mr-md-0 wow slideInLeft bg-img">
+                <img src="img/frame-4.svg" class="w-75 content-2" alt="">
+            </div>
+        </div>
+        <div class="col-12 col-md-6 about-text py-3 py-md-5">
+
+            <div class="w-75 content-2-text wow slideInRight">
+               
+                <h4 class="text-uppercase">About me</h4>
+                <p class=" py-4">
+                    I currently works as a frontend-developer using bootstrap framework,angular frameword and jquery libraries in a local company since 2021 November.I also passionate in learning backend lanuguage such as PHP using Laravel Framework,Wordpress.
+                </p>
+                <p>
+                   My ultimate goal is to be a full stack developer.
+                </p>
+               
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="services" class="container-fluid services">
+    <div class="row pb-5 min-vh-100">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-12">
+                    <div class="my-5 wow slideInDown">
+                        <p class="text-primary">My Projects</p>
+                        <h4 class="text-uppercase font-weight-bolder">What have I done ?</h4>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card shadow mb-5 services-card wow slideInRight ani-delay-1">
+                        <img class="card-img-top" src="img/pg-1.png" alt="Card image cap" style="width: 100%;height: 200px;">
+                        <div class="card-body">
+                            
+                            <p class="card-title text-primary my-4">
+                               Shopping Website (Pure PHP Project)
+                            </p>
+                            <p class="card-text mb-4 services-card-des font-weight-lighter">
+                                This project includes both customer site and admin site. In admin site,admin can do user authorization,create ,edit,delete items,can see product categories,can see reports, customers's orders.
+                                In customer site,can sign up user acounts, add items to shopping carts.
+                            </p>
+                            <div class="">
+                                <a href="https://github.com/eimyat528/php_shop"  class="btn btn-primary">View on Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card shadow mb-5 services-card wow slideInRight ani-delay-1">
+                        <img class="card-img-top" src="img/pg-2.png" alt="Card image cap" style="width: 100%;height: 200px;">
+                        <div class="card-body">
+                            
+                            <p class="card-title text-primary my-4">
+                               Restaurant Website (Laravel)
+                            </p>
+                            <p class="card-text mb-4 services-card-des font-weight-lighter">
+                                This project includes login page, customer site and admin site. In admin site,admin can add.update,delete dishs,can see customers's orders and check and approve order status.
+                                In customer site,can order dish as the quantity you want.
+                            </p>
+                            <div class="">
+                                <a href="https://github.com/eimyat528/laravel_res"  class="btn btn-primary">View on Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card shadow mb-5 services-card wow slideInRight ani-delay-1">
+                        <img class="card-img-top" src="img/pg-3.png" alt="Card image cap" style="width: 100%;height: 200px;">
+                        <div class="card-body">
+                            
+                            <p class="card-title text-primary my-4">
+                              Admin Dashboard(bootstrap)
+                            </p>
+                            <p class="card-text mb-4 services-card-des font-weight-lighter">
+                                A customized admin dashboard using jquery libraries,html,css,javascript.This static website was for C# Project according to customer's need.
+                            </p>
+                            <div class="">
+                                <a href="https://github.com/eimyat528/design_pj"  class="btn btn-primary">View on Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container-fluid contact">
+    <div class="row">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12">
+                    <div class="my-5 text-center">
+                     
+                        <h4 class=" font-weight-bolder">Contact me</h4>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 ">
+                    <div class="my-3 ml-5 mr-5 mr-md-0 animated slideInRight ani-delay-2" >
+                        <div>
+                            <h4 class="">Got a project in</h4>
+                            <h1 class=" font-weight-bolder text-primary">mind?</h1>
+                        </div>
+                        <img src="img/frame-6.svg" style="width: 30%;" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea type="text" class="form-control" rows="5" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <footer class="col-12 footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3  mb-5">
+                        <div class="text-white text-center">
+                            <p class="text-uppercase">Stay In Touch</p>
+                            <div class="d-flex justify-content-around social-icon">
+                                <a href="">
+                                    <i class="text-white fa fa-facebook-f"></i>
+                                </a>
+                                <a href="https://github.com/eimyat528">
+                                    <i class="text-white fa fa-google-plus"></i>
+                                </a>
+                                <a href="">
+                                    <i class="text-white fa fa-twitter"></i>
+                                </a>
+                                <a href="">
+                                    <i class="text-white fa fa-envelope"></i>
+                                </a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3  mb-5">
+                        <div class="text-white">
+                            <h4 class="text-uppercase mb-4">Contact</h4>
+                            <div class="font-weight-light">
+                                <a href="#" class="text-white text-uppercase mb-3">
+                                    <i class="fa fa-phone-square fa-fw"></i> 09662009155
+                                </a>
+                                <br>
+                                <a href="#" class="text-white tmb-3">
+                                    <i class="fa fa-envelope fa-fw"></i> ei24myat12@gmail.com
+                                </a>
+                                <br>
+                               
+                                <a href="#" class="text-white  mb-3">
+                                    <i class="fa fa-google-plus fa-fw"></i> https://github.com/eimyat528
+                                </a>
+                                <br>
+                                <a href="#" class="text-white  mb-3">
+                                    <i class="fa fa-map fa-fw"></i> No,17. Zion Hill Street,Insein, Yangon.
+                                </a>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="pb-5 d-flex flex-column flex-lg-row justify-content-between">
+                            <span class="text-white">©All Rights Reserved</span>
+                            <span class="text-white">Designed by Ei Myat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</section>
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="vendor/slick/slick.min.js"></script>
+<script src="vendor/wow/wow.js"></script>
+<script src="vendor/way_point/jquery.waypoints.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
